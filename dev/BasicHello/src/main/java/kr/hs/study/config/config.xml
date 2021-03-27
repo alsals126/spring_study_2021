@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- xmlns : xml namespace : 별명  -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+       					   
+	<!-- IOC container에서 객체생성 -->
+	<bean id="hello1" class="kr.hs.study.beans.HelloWorldEn"/>
+	<bean id="hello2" class="kr.hs.study.beans.HelloWorldKo"/>
+	
+	<bean id="samsung" class="kr.hs.study.beans.TVSamsung"/>
+	<bean id="lg" class="kr.hs.study.beans.TVLg"/>
+</beans>

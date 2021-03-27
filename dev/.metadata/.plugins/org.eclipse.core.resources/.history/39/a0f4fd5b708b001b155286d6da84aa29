@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+       					   
+	<bean id="obj1" class="kr.hs.study.beans.TestBean1" lazy-init="true" scope="prototype"/> <!-- 객체 만들어서 IOC컨테이너에 보관하라고 하기 -->
+	<bean id="obj2" class="kr.hs.study.beans.TestBean1">
+		<constructor-arg value="10" index="0"/>
+		<constructor-arg value="11.11" index="1" type="double"/>
+		<constructor-arg value="ncsdb" index="2" type="java.lang.String"/>
+	</bean>
+	
+</beans>

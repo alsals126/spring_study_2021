@@ -1,0 +1,50 @@
+package kr.hs.study.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.context.annotation.Scope;
+
+import kr.hs.study.beans.DataBean3;
+import kr.hs.study.beans.TestBean2;
+import kr.hs.study.beans.TestBean3;
+
+@Configuration
+public class JavaConfig {
+	@Bean(name="obj2")
+	public TestBean2 java1() {
+		TestBean2 t1 = new TestBean2();
+		return t1;
+	}
+	
+	@Bean
+	@Lazy
+	public TestBean2 obj3() {
+		return new TestBean2();
+	}
+	
+	@Bean(initMethod="init")
+	@Scope("prototype")
+	public TestBean2 obj4() {
+		return new TestBean2();
+	}
+	
+	// 생성자 DI (자바로 설정하는법)
+	@Bean
+	public TestBean3 obj5() {
+		TestBean3 t3 = new TestBean3(300, "spring3", new DataBean3());
+		return t3;
+	}
+	
+	// 자바로 하는 setter DI
+	@Bean
+	public TestBean3 obj6() {
+		// setter 500, spring5  객체
+		TestBean3 t4 = new TestBean3();
+		t4.setA(500);
+		t4.setB("spring5");
+		t4.setC(new DataBean3());
+		
+		return t4;
+	}
+}

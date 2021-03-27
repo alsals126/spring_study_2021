@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- xmlns : xml namespace : 별명  -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+       					   
+	<!-- IOC container에서 객체생성 -->
+	<!-- 객체이름이 없음 -->
+	<!-- <bean class="kr.hs.study.beans.TestBean" /> -->
+	<!-- <bean id="t2" class="kr.hs.study.beans.TestBean"/> -->
+	
+	<bean id="t1" class="kr.hs.study.beans.TestBean" lazy-init = "true"/>
+	<bean id="t2" class="kr.hs.study.beans.TestBean" scope="prototype"/>
+</beans>

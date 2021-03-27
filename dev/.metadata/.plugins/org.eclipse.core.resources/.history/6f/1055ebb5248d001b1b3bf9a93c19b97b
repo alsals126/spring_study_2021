@@ -1,0 +1,6 @@
+package kr.hs.study.config;
+
+@Configuration
+public class JavaConfig {
+	
+}

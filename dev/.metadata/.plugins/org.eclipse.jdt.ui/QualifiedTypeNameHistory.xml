@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.Person"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.Test"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.HelloWorldEn"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.HelloWorldInter"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.HelloWorldKo"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.TVInter"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.TVSamsung"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.DataBean"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean1"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.CarUser"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="kr.hs.study.config.JavaConfig"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean2"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Lazy"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean3"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.DataBean3"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean4"/>
+</qualifiedTypeNameHistroy>

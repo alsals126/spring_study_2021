@@ -1,0 +1,22 @@
+package kr.hs.study.main;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import kr.hs.study.beans.TestBean1;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 기본적으로 객체는 xml로딩시 생성된다. 
+		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("kr/hs/study/config/config.xml");
+		
+		TestBean1 t1 = ctx.getBean("obj1", TestBean1.class); // 객체를 가져오는게 아니라 주소값을 가져오는 것이다.
+		System.out.println("t1: " + t1); // 그래서 출력하면 주소값이 나온다.
+		TestBean1 t2 =  ctx.getBean("obj1", TestBean1.class);
+		System.out.println("t2: " + t2); // 똑같은 주소값이 출력된다 => 스프링은 기본적으로 '싱글톤'이기 때문이다.
+		
+		ctx.close();
+	}
+
+}
