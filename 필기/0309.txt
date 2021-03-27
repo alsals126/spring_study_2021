@@ -1,0 +1,114 @@
+spring
+1. html
+2. java
+3. servlet
+4. jsp
+5. spring
+-------------------------------------------------------------------------
+1. spring
+jdk 1.8 이상 권장
+
+-2005년 rod johnson
+-전자정부프레임워크
+
+-프레임워크(framework) :뼈대
+-뼈대: 작업하기가 수월(기본구조 존재)
+-여러명이 동시작업 가능
+
+- spring framework  /spring mvc
+
+-비지니스 로직(business logic):
+ -- 로그인: 
+    1) 아이디와 비밀번호입력
+    2) 아이디가 맞는지, 비밀번호가 맞는지, 회원인지, 구분 ( => 비지니스 로직 )
+    3) 아이디와 비밀번호가 맞으면-- 로그인되었습니다. 화면
+       하나라도 안맞으면  -아이디나 비밀번호가 틀립니다.  
+       회원이 아닙니다  -회원가입 창으로 링크
+ -- framwork(뼈), 비지니스 로직(살)
+ -- 프레임 로직과 비지니스 로직을 합치는 것은 xml파일로
+
+-spring 특징
+1) 자바 객체 직접관리
+2) POJO((Plain Old java Object) 방식 (pojo class)
+   -- setter, getter 메서드를 가지고 있는 클래스
+3) IOC 컨테이너(Inversion of Control) 지원: 자바객체를 담음
+  --제어의 역전: spring이 로직을 제어
+  -- 예전: 개발자가 로직을  제어를 했어
+4) DI(Dependency Injection) 지원(의존주입)
+5) AOP(Aspect -Oriented Programming) 지원
+  -- AOP는 include와 비슷
+6) iBatis, myBatis 데이터베이스 라이브러리 관리
+   -- iBatis가 버전업하면서 myBatis로 바뀐 것
+----------------------------------
+6) sql="select * from member";
+php:  member.php
+jsp: member.jsp
+spring:  myBatis: 자바코드와 sql 쿼리를 분리시키자(sql: ****.xml)
+
+5)  include
+---------------------------------------
+1. java SE: 데스크탑 jdk
+2. java EE: enterprise  서버측 자바 개발(유료/ 무거워)  ===> spring framework
+3. java ME : mobile (스마트폰,   임베디드 시스템 프로그래밍)
+
+spring.io  /https://mvnrepository.com/
+
+HelloWorldEn  : hello Spring 출력 (sayHello())
+Hello :     HelloWorldEn 객체 만들어서 hello spring 출력
+
+interface: 다형성( 부모가 자식객체를 참조할 수 있음)   helloWorldEn.java
+인터페이스:  상수/ 추상메서드 (몸통이 없는 메서드)
+-------------------------------------------
+PersonMain   kim, 30 setter 주입시키고 getter로 출력
+-setter: 값 설정하는 것
+
+생성자 이용해서 lee, 25 넣고 출력시켜봐
+
+
+>>객체에  값을 넣어줄 때 : 생성자  /  setter  <===이게 DI(의존주입)
+---------------------------------------------------------------------------
+자바 프로그램 출력과정
+소스프로그램 작성 -> 필요한 라이브러리를 IMPORT ->컴파일  -> 실행  -> 결과출력  ->  배포
+==>maven   /gradle  (자바 빌드도구)
+:자바 프로젝트를 자동으로 빌드해 주는 도구
+spring: eclipse+maven설치
+          sts: maven, tomcat 내장
+
+-jar:  spring core , application 만들때
+-war: web 만들때
+-pom.xml: spring의 설정파일
+
+---------------------------------------------------------------------------
+
+오늘 만든 파일 
+└ BasicJava 프로젝트
+  └ kr.hs.study 패키지
+    └ Hello.java
+    └ HelloWorldEn.java
+  └ kr.hs.study.beans 패키지
+    └ HelloWorldEn.java
+    └ HelloWorldInter.java
+    └ HelloWorldKo.java
+    └ Person.java
+  └ kr.hs.study 패키지
+    └ Hello.java
+    └ PersonMain.java
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
