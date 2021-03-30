@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+       					   
+	<!-- <bean id="obj1" class="kr.hs.study.beans.TestBean1" lazy-init="true" scope="prototype"/> 
+
+	setter DI
+	<bean id="obj2" class="kr.hs.study.beans.TestBean1">
+		<property name="data1" value="11"/>
+		<property name="data2" value="11.11"/>
+		<property name="data3" ref="data3"/>
+	</bean> -->
+	
+	
+</beans>
