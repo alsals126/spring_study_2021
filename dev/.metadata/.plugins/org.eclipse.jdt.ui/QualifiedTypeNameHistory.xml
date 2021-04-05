@@ -28,4 +28,5 @@
     <fullyQualifiedTypeName name="kr.hs.study.beans.TV"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.SongSpeaker"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.Speaker"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.LgTV"/>
 </qualifiedTypeNameHistroy>

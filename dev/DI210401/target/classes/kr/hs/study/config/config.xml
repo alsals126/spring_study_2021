@@ -14,7 +14,7 @@
 	</bean>
 	
 	<bean id="lt" class="kr.hs.study.beans.LgTV">
-		<constructor-arg value="25"/>
-		<constructor-arg ref="ss"/>
+		<property name="price" value="10"/>
+		<property name="speaker" ref="ss"/>
 	</bean>
 </beans>
