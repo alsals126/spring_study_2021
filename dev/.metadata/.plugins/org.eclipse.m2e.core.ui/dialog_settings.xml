@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\오정민(2021년)\3학년\Spring\dev\Component1"/>
 			<item value="D:\오정민(2021년)\3학년\Spring\dev\JavaConfiguration"/>
 			<item value="D:\오정민(2021년)\3학년\Spring\dev\BasicSpring"/>
 			<item value="C:\Users\Samsung\Desktop\3학년\Spring\dev\SetterDI\src\main\java\kr\hs\study\beans\DataBean1.java"/>
@@ -53,6 +54,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="Component"/>
 			<item value="DI210401"/>
 			<item value="Constructor_Autowired"/>
 			<item value="Autowired"/>
