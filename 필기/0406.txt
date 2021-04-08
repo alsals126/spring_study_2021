@@ -1,0 +1,6 @@
+객체를 만드는 방법
+1. xml
+2. java @Bean
+3. annotation 사용
+	@Component => annotation을 분석해서 객체를 만들어
+	@Lazy
