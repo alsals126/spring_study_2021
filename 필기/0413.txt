@@ -13,6 +13,11 @@ aspectj 라이브러리 다운 받아서 사용
 <aop:config>
 	<aop:aspect ref = advice들이 있는 곳> --advice들이 있는 곳 지정
 		<aop:pointcut id=....... expression="executioin(* method3())"/> --pointcut 지정
+                                                                                --method3()자리에 리턴타입, 패키지명, 클래스명, 메서드이름
+                                                                                -- ..은 밑에 있는 모든것
                 <aop:before method="beforeMethod" pointcut-ref=.../> --advice 적용할 위치 지정
 	</aop:aspect>
 </aop:config>
+----------------------------------------
+execution
+ 리턴타입 패키지명 클래스명 메서드이름

@@ -13,6 +13,7 @@
 	<context:annotation-config/>
 	
 	<bean id="t1" class="kr.hs.study.beans.TestBean1"/>
+	<bean id="t2" class="kr.hs.study.beans.TestBean2"/>
 	<bean id="advice" class="kr.hs.study.advisior.Advice"/>
 	
 	<aop:config>
@@ -25,6 +26,29 @@
 			<aop:pointcut id="point2" expression="execution(* method2())"/>
 			<aop:before method="beforeMethod" pointcut-ref="point2"/>
 			<aop:after method="afterMethod" pointcut-ref="point2"/>
+			
+			<!-- Bean2로 끝나는 method로 시작하는 메서드 before, after 모두 적용 -->
+			<aop:pointcut id="point3" expression="execution(* kr.hs.study.beans..*Bean2.method*()))"/>
+			<aop:before method="beforeMethod" pointcut-ref="point3"/>
+			<aop:after method="afterMethod" pointcut-ref="point3"/>
+			
+			<!-- 
+			// method2에 around 적용 (위에서 before, after 적용했기에 두개도 함께 나온다) 
+			<aop:pointcut id="point4" expression="execution(* method2())"/>
+			<aop:around method="aroundMethod" pointcut-ref="point4"/>
+			 -->
+			
+			<!-- func1에 afterthrowing 적용 -->
+			<aop:pointcut id="point5" expression="execution(* func1())"/>
+			<aop:after-throwing method="afterThrowing" pointcut-ref="point5" throwing="e"/>
+			
+			<!-- func3에 afterreturning 적용 -->
+			<aop:pointcut id="point6" expression="execution(* func3())"/>
+			<aop:after-returning method="afterReturning" pointcut-ref="point6"/>
+			
+			<!-- func4에 리턴값이 있는around 적용 --> 
+			<aop:pointcut id="point7" expression="execution(* func4())"/>
+			<aop:around method="aroundMethod" pointcut-ref="point7"/>
 		</aop:aspect>
 	</aop:config>
 </beans>

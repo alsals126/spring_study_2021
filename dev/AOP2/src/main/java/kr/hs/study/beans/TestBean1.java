@@ -20,4 +20,8 @@ public class TestBean1 {
 	public void func3() {
 		System.out.println("func3 호출");
 	}
+	public int func4() {
+		System.out.println("func4 호출");
+		return 100;
+	}
 }
