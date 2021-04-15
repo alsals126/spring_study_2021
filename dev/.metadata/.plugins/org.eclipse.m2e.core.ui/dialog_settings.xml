@@ -54,6 +54,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="AOP_210415"/>
+			<item value="AOP2"/>
 			<item value="AOP"/>
 			<item value="Component"/>
 			<item value="DI210401"/>

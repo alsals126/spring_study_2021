@@ -27,7 +27,7 @@
 			<aop:before method="beforeMethod" pointcut-ref="point2"/>
 			<aop:after method="afterMethod" pointcut-ref="point2"/>
 			
-			<!-- Bean2로 끝나는 method로 시작하는 메서드 before, after 모두 적용 -->
+			<!-- Bean2로 끝나는 class에서 method로 시작하는 메서드 before, after 모두 적용 -->
 			<aop:pointcut id="point3" expression="execution(* kr.hs.study.beans..*Bean2.method*()))"/>
 			<aop:before method="beforeMethod" pointcut-ref="point3"/>
 			<aop:after method="afterMethod" pointcut-ref="point3"/>
