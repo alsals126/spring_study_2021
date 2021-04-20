@@ -1,0 +1,8 @@
+* kr.hs.study.beans..*Bean2.method*()
+리턴타입(상관없음)
+..=> beans폴더의 하위 폴더 전부 다
+-------------------------------------------------
+<<DB 라이브러리 설치
+1.spring-jdbc
+2.dbcp2(apache-common.. 다운)
+3.*** ojdbc
