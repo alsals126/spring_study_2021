@@ -1,0 +1,26 @@
+<<AOP 용어
+AOP:  하나의 프로그램을 관점 단위로 분리하여 관리하는 프로그래밍 방법론
+
+1.  joint point:
+2. pointcut:
+3. advice:
+4. target:
+5. weaving:
+6. advisor:
+---------------------------------------------------
+aspectj   라이브러리 
+<aop:config>
+	<aop:aspect ref= advice 들이 있는 곳..> --advice들이 있는 곳 지정
+	<aop:pointcut id=............ 
+                expression="execution(* method3())"/>  --  pointcut 지정
+              <aop:before method="beforeMethod"   pointcut-ref=..../> -- advice 적용할 위치 지정
+	</aop:aspect>
+</aop:config>
+-------------------------------------------------------------------------
+execution
+ 리턴타입    패키지명      클래스이름    메서드이름
+
+
+
+
+

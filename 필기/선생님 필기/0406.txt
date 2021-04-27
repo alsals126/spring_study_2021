@@ -1,0 +1,12 @@
+@PostConstruct : init method
+@PreDestroy: destroy method
+---------------------------------------------
+@component, @Lazy, @scope:  java에서 기본적으로 제공되는
+어노테이션
+ <<jsr-annotation:  자바이외에서 제공되는 annotation
+  @Autowired       @Inject
+  @Qualifier          @Named
+-------------------------------------------------------
+annotation이용해서 car 프로젝트 만들기
+
+  

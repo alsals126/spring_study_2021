@@ -1,0 +1,9 @@
+<< DB   라이브러리 설치
+1. spring-jdbc
+2. dbcp2  (apache-common.....다운받어)
+3. *** ojdbc (지금은 안됨)
+3.  jdbc driver : ojdbc 
+-------------------------------------------
+<<dbcp(Database Connection Pool)
+:사용자 요청이 올때마다 connection객체를 얻는 것이 아닌,
+미리 일정한 갯수를 만들어놔서 관리하는 것을 말한다.

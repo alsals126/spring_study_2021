@@ -1,0 +1,54 @@
+DIPrj
+
+//Car
+  int price
+ String name // 차종
+
+
+//  CarUser
+   owner     // 차주이름
+   String color;
+  Car  car_type;
+-----------------------------------
+1. constructor DI  로     kim,   red,  3000, sonata 출력
+2. setter DI 로  lee, blue, 5000, k9  출력
+3. 자동주입으로 park, green, 7000, avante 출력
+----------------------------------------------------------------
+1. spring 은 singleton이다  (scope="prototype")
+2. 객체는 xml로딩시 생성된다. (lazy-init="true")
+
+------------------------------------------------------------
+<<autowire : 자동주입   객체주입할 때만
+1.byName: 멤버변수이름== bean의 id
+2. byType: 멤버변수의 타입(멤버변수의 클래스타입)==bean의 클래스
+ - 동일한 이름의 bean이 2개이상 존재할 때는 에러 발생
+
+3. constructor:  생성자의 매개변수타입===bean의 타입이 일치
+autowire="contstuctor"
+public TestBean1(DataBean1 d) {
+		this.d1 = d;
+	}
+------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

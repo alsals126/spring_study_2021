@@ -1,0 +1,9 @@
+11, 11.11, databean1 의 주소
+setter로 세팅해서 출력
+1)  xml  <property...>
+2) javaconfig    setData1.....
+
+생성자로 주입
+1)  xml  <constructor-arg.>
+2) javaconfig     그냥 생성자로.....
+

@@ -1,0 +1,74 @@
+* 객체를  spring 이 만들어준다. IOC Container에 보관
+==> xml, java, annotation 으로 하는 방법
+1.   xml로 객체 생성하고 관리하는 방법
+<bean  id="obj1" class="kr.hs.study.beans.TestBean"/> 
+*   객체는  기본적으로 xml파일을 로딩할 때 생성이된다.
+* 내가 객체를 실제로 사용할 때 생성하고 싶다..==>  lazy-init="true"
+*기본적으로 객체는 한번 만 생성이 된다. (singleton)
+* 객체를 가지고 올 때 매번 새로 생성해서 가지고 오고 시퍼==>  scope="prototype"
+
+<bean  id="obj1" class="kr.hs.study.beans.TestBean"   scope="prototype"/> 
+
+TestBean t1=ctx.getBean("obj1",TestBean.class);
+system.out.println(t1);  //obj1의 주소값  0x13014
+
+TestBean t2=ctx.getBean("obj1",TestBean.class); 
+system.out.println(t2); //obj1 의 주소값   0x2342233
+
+TestBean t3= ctx.getBean("obj1",TestBean.class);
+system.out.println(t2); //obj1 의 주소값   0x654333
+
+* singleton 인 경우: xml파일 로딩할 때 객체가 생성된다.
+* singleton이고 lazy-init=true 인 경우에는:  getBean()실행(IOC container에서 객체를 가져올 때))할 때 생성
+* scope이 prototype일 경우에는: getBean() 실행될 때 객체생성된다.
+----------------------------------------------------------------------------------------------
+<< 객체의 라이프 사이클
+1. init-method: 생성자 호출(객체가 만들어졌다) 다음에 자동으로 실행되는 메서드 
+2. destroy-method:  종료될 때 자동으로 호출  (IOC container를 종료시킬때 ==ctx.close()실행전에 호출)
+3. default-init-method:  기본...앞에...메서드
+4. default-destroy-method:기본...종료...메서드
+3,4번같은경우에는: 모든 bean들이 자동으로 호출되는 메서드가 동일할 때
+
+testBean_init()   /testBean_destroy()
+
+1)  내가 init, destroy메서드를 안만들었을 때:   
+         default-init-method="testBean_init" default-destroy-method="testBean_destroy">
+         <bean id="t1" class="kr.hs.study.beans.TestBean" />
+
+=> 아무일도 발생안한다. (에러발생 안함)
+
+2) 내가 init, destroy메서드를 안만들었을 때:   
+<bean id="t1" class="kr.hs.study.beans.TestBean" init-method="testBean_init" destroy-method="testBean_destroy/>
+==> 에러발생됨.
+----------------------------------------------------------------------------------------------
+<<DI (의존성 주입/ 종속주입) :  xml로 값을 초기화시키는 것
+- bean객체 생성할 때 값이나 객체를 주입시켜 주는 것
+-  setter /생성자
+
+1. 생성자를 통한  DI
+<constructor-arg />
+1) value:값이나 문자열 값 설정 value=100
+2) ref:  객체를 값으로 설정   ref="t1"
+3) type:  세팅할 값의 타입 설정 (문자열: 생략해도 되는데, type="java.lang.string")
+4) index: 세팅할 값의 위치  (0부터 시작)
+
+** spring에서는  string > double > int 우선순위야..
+
+ --객체를 생성자로 주입
+<constructor-arg>
+   		<bean class="kr.hs.study.beans.DataBean"/>
+</constructor-arg>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+

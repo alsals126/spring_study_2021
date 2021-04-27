@@ -1,0 +1,4 @@
+<<DI(setter/constructor)는 외부파일에서 작성했음
+   config.xml   /javaconfig.java
+
+<<@Autowired 는 등록되는 클래스에 직접 삽입이 됨

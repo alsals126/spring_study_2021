@@ -1,0 +1,66 @@
+<<spring 특징
+1. 가볍다
+2. POJO class 지원
+3.   IOC container (Inversion of Control:  제어의 역전)
+==> 프로그램의 제어를 개발자가 아니라  spring 이 가지는 것
+4.  DI(Dependency Injection:  종속주입/ 의존성주입):  값을 넣어주는 것
+   ==> setter   /constructor
+5. myBatis  데이터베이스 라이브러리 사용
+
+<<maven:  자바 빌드 도구 (gradle)
+* tomcat  설정파일:  web.xml
+* spring설정파일: pom.xml(모든 라이브러리들의 코드 작성)
+*  spring-context
+
+kr.hs.study.main
+kr.hs.study.config
+kr.hs.study.beans
+---------------------------------------------------
+<<IOC container
+-container 는 ApplicationContext interface 를 상속받은 클래스
+-classPathApplicationContext
+-GenericXmlApplicationContext
+-XmlWebApplicationContext(spring mvc에서 사용)
+
+ TestBean t1= ctx.getBean(TestBean.class);
+     TestBean=  object
+----------------------------------------------------------
+1) 스프링에서 객체는 언제 생성될까???
+:xml파일 로딩할 때  생성
+
+2) 객체를 가져올 때는 언제야????
+:  getBean() 메서드 호출할 때
+
+* 스프링에서는 사용할 객체를  .xml에 정의를 하고 필요할 때 객체를 가지고 와서(getBean()이용) 사용한다.
+* singletone으로 한번 가져오면 다시 생성되지 않는다. 
+
+3) 스프링에서 객체는  xml파일 로딩시 생성되지만, 
+    getBean()호출시 (객체를 가져올 때)  생성할 수도 있다.   --lazy-init옵션 사용
+
+4) singleton: 객체를 하나만 생성해서 사용한다.
+   -scope:  객체를 가져올 때마다 생성한다.
+---------------------------------------------------------------------------------------------
+1. spring은 기본적으로 singleton 이다 (객체가 하나만 생성된다)
+2. singletone인 경우에는  xml 파일 로딩할 때 객체가 생성된다
+3.  getBean()호출할 때 객체 생성하게 하려면:  lazy-init=true 속성 사용
+4. scope=prototype인 경우,  객체를 가져올 때마다 (getBean() 호출시)생성된다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
