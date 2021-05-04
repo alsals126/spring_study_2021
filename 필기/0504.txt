@@ -9,3 +9,7 @@
 
 <<WAS(Web Application Server)
 tomcat / WebLogic / WebSphere / Jeus
+
+** tomcat 세팅
+1. [window]-[preferences]-[server]-[runtime environment]-[add]에서 tomcat 선택
+2. [마우스 오른쪽 버튼]-[build path]-[add library]-[Server Runtime]-tomcat 선택

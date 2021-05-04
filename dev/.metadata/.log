@@ -2577,3 +2577,15 @@ java.lang.InterruptedException
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2021-05-04 10:14:03.863
 !MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 10:37:55.026
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.aipWWPNN
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 10:37:55.039
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.aipWWPNN
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 10:37:55.043
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-04 10:37:55.046
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.aipWWPNN => OK

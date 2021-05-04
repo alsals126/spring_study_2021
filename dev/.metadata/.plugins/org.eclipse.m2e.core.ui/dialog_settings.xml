@@ -54,6 +54,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="TimeTablePrj"/>
 			<item value="BookPrj"/>
 			<item value="SpringDB"/>
 			<item value="AOP_210415"/>
@@ -68,7 +69,6 @@
 			<item value="kr.hs.study"/>
 			<item value="ConstructorDI"/>
 			<item value="BeanLifeCycle"/>
-			<item value="BasicHello"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
