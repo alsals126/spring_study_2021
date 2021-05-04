@@ -22,7 +22,7 @@
 	<bean id="t5" class = "kr.hs.study.beans.TestBean1" lazy-init = "true">
 		<constructor-arg value = "50" type="int"></constructor-arg>
 		<constructor-arg value = "55.5" type="double"></constructor-arg>
-		<constructor-arg value = "string5" type="java.lang.String"></constructor-arg>
+		<constructor-arg value = "string5" type="java.lang.String"/>
 	</bean>
 	
 	<bean id="t6" class="kr.hs.study.beans.TestBean1" lazy-init="true">
@@ -55,5 +55,11 @@
 		<constructor-arg ref="d3"/>
 		<constructor-arg ref="d3"/>
 	</bean>
-		
+	
+	
+	<bean id="t10" class = "kr.hs.study.beans.TestBean1" lazy-init = "true">
+		<constructor-arg value = "55.5" type="double" index="1"></constructor-arg>
+		<constructor-arg value = "50" type="int" index="0"></constructor-arg>
+		<constructor-arg value = "string5" type="java.lang.String"/>
+	</bean>	
 </beans>

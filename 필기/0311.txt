@@ -27,7 +27,7 @@ kr.hs.study.beans
 
 annotation : 앞에 @표시가 있는거?
 ----------------------------------------------------------
-객체 가져오는 방법
+객체 가져오는 방법	
 1. TestBean t1 = ctx.getBean(TestBean.class);
 2. TestBean t2 = (TestBean) ctx.getBean("t2");
 3. Test t2 = ctx.getBean("t2", TestBean.class); // Test는 인터페이스

@@ -10,4 +10,7 @@ public class TestBean2 {
    public void init() {
 	   System.out.println("생성자 호출 다음에 실행되는 init메서드");
    }
+   public void destroy() {
+		System.out.println("destroy 메소드");
+	}
 }

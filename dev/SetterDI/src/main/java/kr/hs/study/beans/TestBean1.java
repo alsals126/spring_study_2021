@@ -47,6 +47,11 @@ public class TestBean1 {
 		this.d1 = d1;
 	}
 	
-	
+	public void a() {
+		System.out.println("a: " + a);
+		System.out.println("b: " + b);
+		System.out.println("c: " + c);
+		System.out.println("d: " + d1);
+	}
 
 }

@@ -15,27 +15,62 @@ public class MainClass {
 		// TODO Auto-generated method stub
 		ClassPathXmlApplicationContext ctx1 = 
 				new ClassPathXmlApplicationContext("kr/hs/study/config/config.xml");
-		
+		/*
 		TestBean2 t3 = ctx1.getBean("obj6", TestBean2.class);
 		System.out.println("t3 : " + t3);
 		
 		TestBean2 t5 = ctx1.getBean("obj6", TestBean2.class);
 		System.out.println("t5 : " + t5);
 		
-		ctx1.close();
+		ctx1.close();*/
 		
 		System.out.println("================================================");
 		
 		// 설정이 있는 자바파일 등록
 		AnnotationConfigApplicationContext ctx2 = new AnnotationConfigApplicationContext(JavaConfig.class);
-		TestBean2 t4 = ctx2.getBean("obj4", TestBean2.class);
-		t4.pr();
+		TestBean2 t7 = ctx2.getBean("obj4", TestBean2.class);
+		t7.pr();
+		System.out.println("t7: " + t7);
 		
-		TestBean3 t1= ctx2.getBean("obj3", TestBean3.class);
+		TestBean2 t8 = ctx2.getBean("obj4", TestBean2.class);
+		t8.pr();
+		System.out.println("t8: " + t8);
+
+		System.out.println("\n---\n");
 		
-		TestBean4 t7 = ctx2.getBean("obj7", TestBean4.class);
-		System.out.println("t7.data1: " + t7.getData1());
-		System.out.println("t7.data2: " + t7.getData2());
+		
+		TestBean2 t9 = ctx2.getBean("obj5", TestBean2.class);
+		t9.pr();
+		System.out.println("t9: " + t9);
+		
+		TestBean2 t10 = ctx2.getBean("obj5", TestBean2.class);
+		t10.pr();
+		System.out.println("t10: " + t10);
+
+		System.out.println("\n---\n");
+		
+
+		TestBean2 t11 = ctx2.getBean("obj6", TestBean2.class);
+		t11.pr();
+		System.out.println("t11: " + t11);
+
+		TestBean2 t12 = ctx2.getBean("obj6", TestBean2.class);
+		t12.pr();
+		System.out.println("t12: " + t12);
+
+		
+		System.out.println("\n---\n");
+		
+		
+		TestBean3 t23 = ctx2.getBean("obj13", TestBean3.class);
+		
+		System.out.println("t23:      " + t23.getA() + "      " + t23.getB() + "      " + t23.getC());
+		
+
+		TestBean3 t24 = ctx2.getBean("obj14", TestBean3.class);
+		
+		System.out.println("t24:      " + t24.getA() + "      " + t24.getB() + "      " + t24.getC());
+		
 		
 		ctx2.close();
 	}

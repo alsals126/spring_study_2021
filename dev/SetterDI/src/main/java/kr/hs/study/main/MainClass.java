@@ -16,15 +16,25 @@ public class MainClass {
 		TestBean1 t2 =  ctx.getBean("obj1", TestBean1.class);
 		System.out.println("t2: " + t2); // 똑같은 주소값이 출력된다 => 스프링은 기본적으로 '싱글톤'이기 때문이다.
 		
+		TestBean1 t3 =  ctx.getBean("obj3", TestBean1.class);
+		t3.a();
+		
 		TestBean1 t4 = ctx.getBean("obj4", TestBean1.class);
-		System.out.println("t4.d1: " + t4.getD1());
-		System.out.println("=======================================");
+		System.out.println("t4.d1:" + t4.getD1());
+		
+		System.out.println("================================================");
 		
 		TestBean1 t5 = ctx.getBean("obj5", TestBean1.class);
-		System.out.println("t5.d1: " + t5.getD1());
+		System.out.println("t5.d1:" + t5.getD1());
+		
+		System.out.println("================================================");
 		
 		TestBean1 t6 = ctx.getBean("obj6", TestBean1.class);
-		System.out.println("t6.d1: " + t6.getD1());
+		System.out.println("t6.d1:" + t6.getD1());
+		
+		System.out.println("================================================");
+		
+		TestBean1 t7 = ctx.getBean("obj7", TestBean1.class);
 		
 		ctx.close();
 	}

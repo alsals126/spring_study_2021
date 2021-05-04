@@ -1,0 +1,11 @@
+<<Servlet
+- 자바 안에 html
+- 클라이언트 요청에 따라서 서버에서 실행되는 자바프로그램
+- 클라이언트가 요청하면-> 서버에서 실행된 후-> 결과만 클라이언트로 전송
+
+1) HttpServlet 클래스를 무조건 상속
+2) init()-Service()로 실행
+3) 실행되는 class파일 : webContent-WEB-INF/classes 폴더 안에 있음
+
+<<WAS(Web Application Server)
+tomcat / WebLogic / WebSphere / Jeus

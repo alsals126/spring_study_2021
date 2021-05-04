@@ -56,6 +56,13 @@ public class MainClass {
 		
 		TestBean2 obj9 = ctx.getBean("t9", TestBean2.class);
 		obj9.getData1().prData();
+		obj9.getData2().prData();
+		
+		System.out.println("========================================================");
+		
+		
+		TestBean1 obj10 = ctx.getBean("t10", TestBean1.class);
+		obj5.prData();
 		
 		ctx.close();
 	}

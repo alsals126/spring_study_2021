@@ -6,6 +6,6 @@
        					   http://www.springframework.org/schema/beans/spring-beans.xsd" default-init-method="testBean_init" default-destroy-method="testBean_destroy"	>
        					   
 	<bean id="t1" class="kr.hs.study.beans.TestBean"/>
-<!--<bean id="t2" class="kr.hs.study.beans.TestBean" init-method="testBean_init" destroy-method="testBean_destroy"/>-->
+	<bean id="t2" class="kr.hs.study.beans.TestBean" init-method="testBean_init" destroy-method="testBean_destroy"/>
 	
 </beans>

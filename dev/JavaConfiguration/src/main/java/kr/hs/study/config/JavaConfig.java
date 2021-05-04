@@ -12,7 +12,7 @@ import kr.hs.study.beans.TestBean4;
 
 @Configuration
 public class JavaConfig {
-	@Bean(name="obj2")
+	@Bean(name="obj4")
 	public TestBean2 java1() {
 		TestBean2 t1 = new TestBean2();
 		return t1;
@@ -20,38 +20,31 @@ public class JavaConfig {
 	
 	@Bean
 	@Lazy
-	public TestBean2 obj3() {
+	public TestBean2 obj5() {
 		return new TestBean2();
 	}
+
 	
-	@Bean(initMethod="init")
+	@Bean(initMethod = "init")
 	@Scope("prototype")
-	public TestBean2 obj4() {
+	public TestBean2 obj6() {
 		return new TestBean2();
 	}
 	
-	// 생성자 DI (자바로 설정하는법)
 	@Bean
-	public TestBean3 obj5() {
-		TestBean3 t3 = new TestBean3(300, "spring3", new DataBean3());
+	public TestBean3 obj13()
+	{
+		TestBean3 t3 = new TestBean3(3, "String3", new DataBean3());
 		return t3;
 	}
 	
-	// 자바로 하는 setter DI
 	@Bean
-	public TestBean3 obj6() {
-		// setter 500, spring5  객체
-		TestBean3 t4 = new TestBean3();
-		t4.setA(500);
-		t4.setB("spring5");
-		t4.setC(new DataBean3());
-		
-		return t4;
-	}
-	
-	@Bean
-	public TestBean4 obj7() {
-		TestBean4 t5 = new TestBean4();
-		return t5;
+	public TestBean3 obj14()
+	{
+		TestBean3 t3 = new TestBean3();
+		t3.setA(4);
+		t3.setB("String4");
+		t3.setC(new DataBean3());
+		return t3;
 	}
 }
