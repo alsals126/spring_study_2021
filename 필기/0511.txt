@@ -1,0 +1,43 @@
+client → web server → servlet container (최초요청인가?)──(yes)→ 메모리로딩-객체생성
+                                              │                                 ↓
+                                             (no)                                init() --최초 한번만
+                                              │                      		 ↓
+                                              │       객체가 생성됨 (HttpServletrequest, HttpServletresponse)
+                                              │  				 ↓
+                                              └──→ Service(HttpServletrequest, HttpServletresponse)
+                                                      	 ↙↘
+                            			   doGet()   doPost()
+
+──────────────────────────────────────────────────────────────
+실행시키는 법
+1) web.xml (mapping)
+2) @WebServlet("_")
+──────────────────────────────────────────────────────────────
+Servlet은 java안에 html
+JSP는     html안에 java
+──────────────────────────────────────────────────────────────
+<< 요청방식과 프로토콜
+request URI : req.getRequestURI()
+Server name : req.getServerName()
+Server Port : req.getServerPort()
+client addr : req.getRemoteAddr()
+client Host : req.getRemoteHost()
+client Port : req.getRemotePort()
+──────────────────────────────────────────────────────────────
+mvc (model view controller)
+ : 처리(controller)랑 출력(view)을 분리
+ : 처리랑 출력을 이어주는 model
+
+MVC1 : 요청을 JSP로 받아서 결과로 JSP로 보냄 
+     : 간단한 거 할때 유용. 한 파일에 model, view, controller가 다 있다.
+MVC2 : 요청을 SERVLET으로 받아서 결과로 JSP로 보냄
+     : 복잡한 거 할 때 유용.
+     : controller(servlet) → model(java로 이루어짐. POJO CLASS) → view(jsp)
+     : 유지보수가 쉽고, 역할을 나누는게 쉽다(보통 view는 웹 퍼블리셔가 해서).
+──────────────────────────────────────────────────────────────
+<< MVC(Model, View, Controller)
+1. Model1 : 하나의 프로그램에서 동작되고, 요청과 처리결과를 jsp가 한다.
+2. Model2 : Controller와 View를 분리시키고, Controller는 servlet으로 작성, View는 jsp로 작성.
+*  RequestDispatcher : 현재 request영역에 정보를 저장하고 있다가 
+                       그 다음 페이지, 그 다음페이지, 그 다음페이지에 계속 forward시킬 때 정보를 볼 수 있게 하는 것을 말한다.
+                       즉, 넘기는 데이터의 정보를 유지하기 위해 사용한다.
