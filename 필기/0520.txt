@@ -1,0 +1,2 @@
+redirect - 내 위치가 바뀐거
+forawrd - 주소가 다

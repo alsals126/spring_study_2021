@@ -25,7 +25,7 @@ client Host : req.getRemoteHost()
 client Port : req.getRemotePort()
 ──────────────────────────────────────────────────────────────
 mvc (model view controller)
- : 처리(controller)랑 출력(view)을 분리
+ : 처리(controller: 흐름을 제어)랑 출력(view)을 분리
  : 처리랑 출력을 이어주는 model
 
 MVC1 : 요청을 JSP로 받아서 결과로 JSP로 보냄 

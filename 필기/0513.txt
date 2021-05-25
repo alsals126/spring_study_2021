@@ -1,0 +1,18 @@
+<< 서블릿에서 자바스크립트 호출
+ - 서블릿은 서버 쪽 언어이고, 자바스크립트 언어는 클라이언트 쪽 언어라서 활동하는 영역이 다르게 때문에 이렇게 호출한다.
+PrintWriter out = res.getWriter();
+String str = "";
+str = "<script>alert('hi);</script>";
+out.print(str);
+
+-------------------------------------------------------------
+http://localhost:8080/ServeltPrj  /login
+                      (contextPath)
+-------------------------------------------------------------
+<<spring MVC 설정하는곳
+1. utf-8설정
+	1-1. window-preferences-general-workspace
+	1-2. web - css,html,jsp
+2. tomcat 서버 설정
+	window-preferences-server-runtime environment
+3. 브라우저는 크롬

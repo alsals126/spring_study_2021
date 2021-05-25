@@ -1,0 +1,5 @@
+<< web.xml 설정
+1. 리스터 등록 : web.xml에 설정한 파일들이 모두 load되도록 설정
+2. dispatcher servlet 등록 (appServlet이란 이름으로 등록)
+3. spring MVC를 위한 XML 설정
+4. bean 등록을 위한 
