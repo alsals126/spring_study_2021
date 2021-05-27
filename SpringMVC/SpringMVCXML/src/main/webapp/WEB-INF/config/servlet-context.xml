@@ -9,10 +9,22 @@
 			 					 http://www.springframework.org/schema/beans/spring-beans.xsd
 			 					 http://www.springframework.org/schema/context
 			 					 http://www.springframework.org/schema/context/spring-context.xsd">
-			 					 
-	<!-- component-scan: package 밑에 잇는 애들을 다 뒤져서 bean으로 등록 -->			 					 
-	<context:component-scan base-package="kr.hs.study.controller"/>
-	<!-- handlermapping을 bean으로 등록 -->
-	<annotation-driven/>
-			 
+	
+<annotation-driven/>	
+
+<context:component-scan base-package="kr.hs.study.controller" />		 
+
 </beans:beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
