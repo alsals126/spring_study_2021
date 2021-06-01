@@ -12,7 +12,15 @@
 	
 <annotation-driven/>	
 
-<context:component-scan base-package="kr.hs.study.controller" />		 
+<context:component-scan base-package="kr.hs.study.controller" />
+<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	<beans:property name="prefix" value="/WEB-INF/views/"/> <!-- 접두사 -->
+	<beans:property name="suffix" value=".jsp"/>            <!-- 접미사 -->
+</beans:bean>		 
+
+<!-- 정적파일 설정(html, css, img ..) -->
+<resources mapping="/**" location="/resources/"/>
+<!-- 정적파일들은 resources 폴더에 저장한다. -->
 
 </beans:beans>
 

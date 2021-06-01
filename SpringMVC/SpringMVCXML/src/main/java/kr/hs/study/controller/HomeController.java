@@ -10,7 +10,8 @@ public class HomeController {
 	@RequestMapping(value="/", method=RequestMethod.GET)
 	public String home() {
 		System.out.println("home");
-		return "/WEB-INF/views/index.jsp";
+		//return "/WEB-INF/views/index.jsp";
+		return "index";
 	}
 	
 	// get방식으로 /test1으로 접속했을 때 콘솔에 test1출력
@@ -18,6 +19,7 @@ public class HomeController {
 	@RequestMapping(value="/test1", method=RequestMethod.GET)
 	public String practice0601() {
 		System.out.println("test1");
-		return "/WEB-INF/views/test1.jsp";
+		//return "/WEB-INF/views/test1.jsp";
+		return "test1";
 	}
 }

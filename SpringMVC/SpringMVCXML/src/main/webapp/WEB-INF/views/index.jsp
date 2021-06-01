@@ -17,5 +17,7 @@
 	<a href="/sub1/test3">/sub1/test3</a>
 	<a href="/sub1/test4">/sub4/test4</a>
 	
+	<img src="/img/logo.svg"><!-- webapp/resources가 루트 -->
+	
 </body>
 </html>
