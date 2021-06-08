@@ -6,5 +6,7 @@
    1) 배열일 때
    2) <a href="/test8?a=100&b=200&c=300/>Test8</a>인데
        @GetMapping 	
-5. 객체로 가져오기
-6. @ModelAndAttribute로 가져오기
+5. 객체로 가져오기 (map, list)
+6. @ModelAttribute로 가져오기 : autowired 사용
+
+3,4,6 (6번을 가장 많이 사용)

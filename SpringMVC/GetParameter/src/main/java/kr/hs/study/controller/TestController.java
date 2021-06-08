@@ -1,15 +1,19 @@
 package kr.hs.study.controller;
 
+import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.context.request.WebRequest;
+
+import kr.hs.study.model.dto.TestDTO;
 
 @Controller
 public class TestController {
@@ -124,6 +128,26 @@ public class TestController {
 		System.out.println("a: " + a);
 		System.out.println("b: " + b);
 		System.out.println("c: " + c);
+		
+		return "result";
+	}
+	
+	@GetMapping("/test11")
+	public String test11(@RequestParam Map<String, String> map,
+						 @RequestParam List<String> c) {
+		String a = map.get("a");
+		String b = map.get("b");
+		for(String val: c)
+			System.out.println("c: " + val);
+		
+		return "result";
+	}
+	
+	@GetMapping("/test12")
+	public String test13(TestDTO dto) { // @ModelAttribute는 생략가능 (@ModelAttribute TestDTO dto)
+		System.out.println(dto.getA());
+		System.out.println(dto.getB());
+		System.out.println(dto.getC());
 		
 		return "result";
 	}
