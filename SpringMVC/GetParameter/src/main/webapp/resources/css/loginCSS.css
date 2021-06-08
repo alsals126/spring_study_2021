@@ -1,0 +1,11 @@
+@charset "UTF-8";
+body{
+	text-align:center;
+}
+input{
+	font-size: 30px;
+	width: 300px;
+	border: 0;
+	border-bottom: 2px solid rgba(0,0,0,0.8);
+	margin-bottom: 30px;
+}

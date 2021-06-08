@@ -1,0 +1,10 @@
+<< 사용자의 입력값 가져오기
+1. HttpServletRequest 로 가져오기 (부모: ServletRequest_
+2. WebRequest로 가져오기 : 사용법은 1번과 동일
+3. @PathVariable로 가져오기 : semantic url 사용시 / 형변환 가능
+4. @RequestParam으로 가져오기 :
+   1) 배열일 때
+   2) <a href="/test8?a=100&b=200&c=300/>Test8</a>인데
+       @GetMapping 	
+5. 객체로 가져오기
+6. @ModelAndAttribute로 가져오기

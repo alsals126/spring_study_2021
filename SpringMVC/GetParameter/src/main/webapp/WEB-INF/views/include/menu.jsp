@@ -8,6 +8,15 @@
 <link href="/css/menu.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	<a href="/test1?a=100&b=200?c=300">GET Test1</a>
+	<a href="/test1?a=100&b=200&c=300">GET Test1</a>
+	<a href="/test2?a=100&b=200&c=300&c=400&c=500">Test2</a>
+	<a href="/test3">Test3</a>
+	<a href="/test4?a=100&b=200"/>Test4</a>
+	<a href="/test5/1000/2000/3000">@PathVariable</a>
+	<a href="/test6?a=300&b=400&c=500">RequestParam</a>
+	<a href="/test7?a=300&b=400&c=500&c=600">RequestParam2</a>
+	<a href="/test8?a=300&b=400&c=500">RequestParam3</a>
+	<a href="/test9?a=300&b=400&c=500">RequestParam4</a>
+	<a href="/test10?a=100&b=200&c=300&c=400">Object</a>
 </body>
 </html>
