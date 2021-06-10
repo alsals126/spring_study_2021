@@ -1,0 +1,10 @@
+1. httpServletRequest
+2. WebRequest
+3. @PathVariable : http:://
+
+--------------------------------------------------------------------
+<< View로 데이터 전달
+1. httpServletRequest로 전달
+2. model로 전달
+3. modelAndView로 전달
+4. 
