@@ -1,0 +1,5 @@
+1. BasicDataSource bean
+: 데이터베이스 접속정보를 관리하는 애
+2. splSession: myBatis 관리하는 애
+3. sqlSessionTemplate: 실제 쿼리 날리는 애
+ myBatis: DAO로부터 

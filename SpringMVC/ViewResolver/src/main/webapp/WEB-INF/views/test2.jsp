@@ -7,8 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Test2</h1>
-	<h3>ID : ${requestScope.id }</h3>
-	<h3>Password : ${requestScope.password }</h3>
+	<h1> Login</h1>
+	<h3> 아이디: ${requestScope.id }</h3>
+	<h3> 비밀번호: ${requestScope.password }</h3>
 </body>
 </html>

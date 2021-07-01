@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="test_db">
+	<insert id="insert_data" parameterType="kr.hs.study.model.dto.LoginDTO">
+		insert into login1(user_id, user_pw) values(#{user_id}, #{user_pw})
+	</insert> 	
+	<delete id="delete1">
+		delete from login1 where user_id = #{user_id}
+	</delete> 	
+	<update id="update1" parameterType="kr.hs.study.model.dto.LoginDTO">
+		update login1 SET user_pw = 0126 where user_id = #{user_id}
+	</update> 	
+</mapper>       

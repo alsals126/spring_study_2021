@@ -7,4 +7,4 @@
 1. httpServletRequest로 전달
 2. model로 전달
 3. modelAndView로 전달
-4. 
+* 사용자의 요청 정보는

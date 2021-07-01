@@ -1,0 +1,5 @@
+<< controller(.java)에 있는 결과값을(model) view(.jsp)로 넘겨줄 때
+     결과값을 저장을 해야지만 view로 넘어간다
+     어디에 저장: request영역에 저장이 됨
+
+* java에서 jsp로 결과(model)

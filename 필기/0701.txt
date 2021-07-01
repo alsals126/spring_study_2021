@@ -1,0 +1,4 @@
+INSERT : parameterType (어떤 값을 추가)
+SELECT : resultType (어디에 넣을 것인가)
+UPDATE : parameterType (무엇을 업데이트 할 것인가)
+DELETE : x (삭제만 하면 되니까)
