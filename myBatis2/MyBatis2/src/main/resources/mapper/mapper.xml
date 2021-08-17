@@ -3,6 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
  
+<!-- 
 <mapper namespace="test_db">
 	<insert id="insert_data" parameterType="kr.hs.study.model.dto.LoginDTO">
 		insert into login1(user_id, user_pw) values(#{user_id}, #{user_pw})
@@ -13,4 +14,20 @@
 	<update id="update1" parameterType="kr.hs.study.model.dto.LoginDTO">
 		update login1 SET user_pw = 0126 where user_id = #{user_id}
 	</update> 	
-</mapper>       
+</mapper>   
+ -->
+
+<mapper namespace="book">
+	<insert id="add" parameterType="kr.hs.study.model.dto.BookDTO">
+		insert into book(title, author, price) values(#{title}, #{author}, #{price})
+	</insert>
+	<delete id="delete">
+		delete from book where title=#{title}
+	</delete>
+	<select id="list" resultType="kr.hs.study.model.dto.BookDTO">
+		select * from book order by title desc
+	</select>
+	<update id="update" parameterType="kr.hs.study.model.dto.BookDTO">
+		
+	</update>
+</mapper>    

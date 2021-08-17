@@ -1,0 +1,1 @@
+insert, update, delete 는 결과값이 없지만, select는 결과값이 있다

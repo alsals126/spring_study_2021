@@ -12,5 +12,7 @@
 <a href="login">Login</a><br/>
 <a href="/delete?user_id=kim">Delete</a><br/> <!-- user_id가 kim 삭제 -->
 <a href="/update?user_id=ohh">Update</a><br/> <!-- user_id가 kim 삭제 -->
+<a href="/book">Book</a><br/>
+<a href="/bookDel?title=music">BookDel</a><br/>
 </body>
 </html>

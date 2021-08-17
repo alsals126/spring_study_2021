@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+*{text-align: center;}
+img{
+	width:160px;
+	border: 2px dotted black;
+	border-radius: 90px;
+	}
+input{
+	text-align: left;
+	margin-left: 10px;
+	}
+button{
+	width: 250px;
+	font-size: 20px;
+}
