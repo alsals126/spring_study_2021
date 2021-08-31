@@ -7,4 +7,10 @@
 	<select id="list" resultType="kr.hs.study.model.dto.MemberDTO">
 		select userid, name, email, join_date from member order by name desc
 	</select>
+	<select id="read" resultType="kr.hs.study.model.dto.MemberDTO">
+		select userid, name, email, join_date from member where userid=#{userid}
+	</select>
+	<select id="check" resultType="int">
+		select count(*) from member where userid=#{userid} and passwd=#{passwd}s
+	</select>
 </mapper>

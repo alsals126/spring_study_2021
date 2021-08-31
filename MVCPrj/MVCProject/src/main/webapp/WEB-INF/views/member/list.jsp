@@ -20,7 +20,7 @@
 		<c:forEach var="test" items="${list1 }">
 			<tr>
 				<td>${test.userid }</td>
-				<td>${test.name }</td>
+				<td><a href="/read?studentId=${test.userid }">${test.name }</a></td>
 				<td>${test.email }</td>
 				<td>${test.join_date }</td>
 			</tr>
