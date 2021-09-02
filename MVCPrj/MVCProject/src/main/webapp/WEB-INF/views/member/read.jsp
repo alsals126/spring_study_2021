@@ -25,19 +25,19 @@
 		<table border="1">
 			<tr>
 				<td>아이디</td>
-				<td><input type="text" value="${studentInfo.userid }" readonly></td>
+				<td><input type="text" name="userid" value="${studentInfo.userid }" readonly></td>
 			</tr>
 			<tr>
 				<td>비밀번호</td>
-				<td><input type="password" value="${studentInfo.passwd }"></td>
+				<td><input type="password" name="passwd" value="${studentInfo.passwd }"></td>
 			</tr>
 			<tr>
 				<td>이름</td>
-				<td><input type="text" value="${studentInfo.name }"></td>
+				<td><input type="text" name="name" value="${studentInfo.name }"></td>
 			</tr>
 			<tr>
 				<td>이메일</td>
-				<td><input type="text" value="${studentInfo.email }"></td>
+				<td><input type="text" name="email" value="${studentInfo.email }"></td>
 			</tr>
 			<tr>
 				<td colspan="2"><input type="button" value="수정" id="btnUpdate">

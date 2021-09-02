@@ -27,16 +27,17 @@ public class MemberController {
 	}
 	
 	@GetMapping("/joinMember")
-	public String joinMember(Model model) {
+	public String joinMember() {
 		return "member/join";
 	}
 	@PostMapping("/joinMember")
-	public String joinMember2(Model model) {
-		return "sum";
+	public String joinMember2(MemberDTO dto) {
+		memberService.insert(dto);
+		return "redirect:/member";
 	}
 	
 	@GetMapping("/read")
-	public String read(@RequestParam String studentId, Model model) {
+	public String read(String studentId, Model model) {
 		MemberDTO student = memberService.read(studentId);
 		model.addAttribute("studentInfo", student);
 		return "member/read";
@@ -56,3 +57,14 @@ public class MemberController {
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+
+

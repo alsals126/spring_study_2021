@@ -20,12 +20,11 @@ public class MemberServiceImpl implements MemberService {
 	}
 
 	public void insert(MemberDTO dto) {
-		
+		dao.insert(dto);
 	}
 
 	public MemberDTO read(String userid) {
-		MemberDTO dao1 = dao.read(userid);
-		return dao1;
+		return dao.read(userid);
 	}
 
 	public boolean check(String userid, String passwd) {

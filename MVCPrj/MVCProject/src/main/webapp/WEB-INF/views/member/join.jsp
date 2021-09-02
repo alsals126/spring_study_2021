@@ -13,10 +13,10 @@ input {
 </head>
 <body>
 	<form action="/joinMember" method="post">
-		아이디 &nbsp;&nbsp;&nbsp;<input type="text"><br> 
-		비밀번호 <input type="text"><br>
-		이름 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"><br> 
-		이메일 &nbsp;&nbsp;&nbsp;<input type="text"><br>
+		아이디 &nbsp;&nbsp;&nbsp;<input type="text" name="userid"><br> 
+		비밀번호 <input type="text" name="passwd"><br>
+		이름 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name"><br> 
+		이메일 &nbsp;&nbsp;&nbsp;<input type="text" name="email"><br>
 		<button type="submit">Join Us</button>
 	</form>
 </body>

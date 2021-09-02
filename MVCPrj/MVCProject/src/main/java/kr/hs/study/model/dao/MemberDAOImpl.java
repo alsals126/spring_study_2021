@@ -23,7 +23,7 @@ public class MemberDAOImpl implements MemberDAO {
 
 	public void insert(MemberDTO dto) {
 		// TODO Auto-generated method stub
-
+		sqlsessiontemplate.insert("member.insert",dto);
 	}
 
 	public MemberDTO read(String userid) {

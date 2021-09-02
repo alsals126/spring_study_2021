@@ -27,6 +27,6 @@
 		</c:forEach>
 	</table>
 	<br>
-	<input type="button" value="회원가입" onclick="location.href='member/join'" />
+	<input type="button" value="회원가입" onclick="location.href='joinMember'" />
 </body>
 </html>
